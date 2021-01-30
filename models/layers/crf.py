@@ -42,7 +42,7 @@ class CRF(nn.Module):
         The parameters will be initialized randomly from a uniform distribution
         between -0.1 and 0.1.
         """
-        nn.init.uniform_(self.start_transitions, -0.1, 0.1)
+        nn.init.uniform_(self.start_transitions, -0.1, 0.1) #设置均匀分布
         nn.init.uniform_(self.end_transitions, -0.1, 0.1)
         nn.init.uniform_(self.transitions, -0.1, 0.1)
 
